@@ -29,6 +29,7 @@ const Wrapper = styled.header`
   align-items: center;
   padding: 8px 16px;
   position: relative;
+  margin-bottom: -24px;
 `;
 
 const Logo = styled.h1`

@@ -19,7 +19,7 @@ const Wrapper = styled.div`
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 48px;
   padding: 48px 16px;
 `;
 
