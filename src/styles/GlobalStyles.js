@@ -21,6 +21,9 @@ body {
   height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: auto;
+  color: #1E1E1E;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
 }
 
 img,
