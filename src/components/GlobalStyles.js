@@ -1,3 +1,6 @@
+import { createGlobalStyle } from "styled-components";
+
+const GlobalStyles = createGlobalStyle`
 /* GLOBAL STYLES */
 
 *,
@@ -205,3 +208,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+`;
+
+export default GlobalStyles;
