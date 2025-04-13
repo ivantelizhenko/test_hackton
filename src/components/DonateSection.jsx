@@ -5,7 +5,7 @@ import Heading from "./Heading";
 import Image from "./Image";
 import Spacer from "./Spacer";
 
-function Donate() {
+function DonateSection({ setPage }) {
   return (
     <Wrapper>
       <Description>
@@ -23,7 +23,11 @@ function Donate() {
         </DonateButtonDesktop>
       </Description>
       <Image alt="" src="/public/hero/third.png" />
-      <DonateButtonMobile type="fill" style={{ "--width": "100%" }}>
+      <DonateButtonMobile
+        type="fill"
+        style={{ "--width": "100%" }}
+        onClick={() => setPage("donate")}
+      >
         Задонатити
       </DonateButtonMobile>
     </Wrapper>
@@ -73,4 +77,4 @@ const DonateButtonMobile = styled(Button)`
   }
 `;
 
-export default Donate;
+export default DonateSection;

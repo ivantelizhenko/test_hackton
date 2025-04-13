@@ -4,11 +4,11 @@ import UnstyledButton from "./UnstyledButton";
 import Heading from "./Heading";
 import { QUERIES } from "../constants";
 
-function ActionCard({ title, description, href }) {
+function ActionCard({ title, description, href, handleSetPage }) {
   return (
     <Wrapper>
       <Link href={href}>
-        <UnstyledButton>
+        <UnstyledButton onClick={handleSetPage}>
           <Icon id="link" size={64} strokeWidth={2} style={{ color: "#fff" }} />
         </UnstyledButton>
       </Link>

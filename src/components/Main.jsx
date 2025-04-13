@@ -4,14 +4,18 @@ import { QUERIES } from "../constants";
 import CardsList from "./CardsList";
 import CardDetails from "./CardDetails";
 import UserAccount from "./UserAccount";
+import DonatePage1 from "./DonatePage1";
+import DonatePage2 from "./DonatePage2";
 
 function Main({ page, setPage }) {
   return (
     <Wrapper>
-      {page === "overview" && <Overview />}
+      {page === "overview" && <Overview setPage={setPage} />}
       {page === "cardsList" && <CardsList setPage={setPage} />}
       {page === "card-details" && <CardDetails />}
       {page === "user-account" && <UserAccount />}
+      {page === "donate" && <DonatePage1 setPage={setPage} />}
+      {page === "donate-second-page" && <DonatePage2 setPage={setPage} />}
     </Wrapper>
   );
 }

@@ -1,14 +1,14 @@
 import styled from "styled-components";
 import Hero from "./Hero";
 import Cta from "./Cta";
-import Donate from "./Donate";
+import DonateSection from "./DonateSection";
 
-function Overview() {
+function Overview({ setPage }) {
   return (
     <Wrapper>
       <Hero />
-      <Cta />
-      <Donate />
+      <Cta setPage={setPage} />
+      <DonateSection setPage={setPage} />
     </Wrapper>
   );
 }

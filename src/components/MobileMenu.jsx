@@ -46,7 +46,15 @@ function MobileMenu({ onCloseMobileMenu, setPage }) {
           </li>
         </List>
         <Spacer size={64} />
-        <Button type="fill">Задонатити</Button>
+        <Button
+          type="fill"
+          onClick={() => {
+            setPage("donate");
+            onCloseMobileMenu();
+          }}
+        >
+          Задонатити
+        </Button>
       </Wrapper>
     </dialog>
   );
