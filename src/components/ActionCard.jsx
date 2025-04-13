@@ -8,7 +8,7 @@ function ActionCard({ title, description, href }) {
     <Wrapper>
       <Link href={href}>
         <UnstyledButton>
-          <Icon id="link" size={64} strokeWidth={3} style={{ color: "#fff" }} />
+          <Icon id="link" size={64} strokeWidth={2} style={{ color: "#fff" }} />
         </UnstyledButton>
       </Link>
       <TextWrapper>
