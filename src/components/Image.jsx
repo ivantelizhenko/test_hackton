@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { QUERIES } from "../constants";
 
 function Image({ ...delegated }) {
   return (
@@ -9,13 +10,14 @@ function Image({ ...delegated }) {
 }
 
 const ImageWrapper = styled.div`
-  // temporary
-  height: 350px;
-  background-color: red;
-
   img {
-    width: 100%;
+    display: block;
+    margin: 0 auto;
     object-fit: cover;
+  }
+
+  @media ${QUERIES.laptopAndUp} {
+    grid-area: image;
   }
 `;
 

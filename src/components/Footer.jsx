@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Logo from "./Logo";
+import { QUERIES } from "../constants";
 
 function Footer() {
   return (
@@ -24,8 +25,10 @@ function Footer() {
           <a href="#">Мій акаунт</a>
         </li>
       </List>
-      <Logo />
-      <p style={{ color: "white" }}>© 2025 PawHome. All rights reserved.</p>
+      <IdentityWrapper>
+        <Logo />
+        <p style={{ color: "white" }}>© 2025 PawHome. All rights reserved.</p>
+      </IdentityWrapper>
     </Wrapper>
   );
 }
@@ -36,6 +39,12 @@ const Wrapper = styled.footer`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  position: relative;
+  @media ${QUERIES.laptopAndUp} {
+    padding: 24px 60px;
+    display: grid;
+  }
 `;
 
 const List = styled.ul`
@@ -49,7 +58,21 @@ const List = styled.ul`
     text-align: center;
     padding: 8px;
     color: white;
+
+    @media ${QUERIES.laptopAndUp} {
+      white-space: nowrap;
+    }
+  }
+
+  @media ${QUERIES.laptopAndUp} {
+    flex-direction: revert;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 `;
+
+const IdentityWrapper = styled.div``;
 
 export default Footer;

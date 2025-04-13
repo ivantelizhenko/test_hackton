@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Icon from "./Icon";
 import UnstyledButton from "./UnstyledButton";
 import Heading from "./Heading";
+import { QUERIES } from "../constants";
 
 function ActionCard({ title, description, href }) {
   return (
@@ -27,6 +28,9 @@ const Wrapper = styled.div`
   position: relative;
   color: #fff;
   display: flex;
+
+  @media ${QUERIES.laptopAndUp} {
+  }
 `;
 
 const Link = styled.a`

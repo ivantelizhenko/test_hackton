@@ -3,6 +3,7 @@ import Heading from "./Heading";
 import UnstyledButton from "./UnstyledButton";
 import Icon from "./Icon";
 import Spacer from "./Spacer";
+import { QUERIES } from "../constants";
 
 function MobileMenu({ onCloseMobileMenu }) {
   return (
@@ -50,6 +51,12 @@ const Wrapper = styled.nav`
   top: 0;
   left: 0;
   z-index: 2;
+
+  & {
+    @media ${QUERIES.laptopAndUp} {
+      display: none;
+    }
+  }
 `;
 
 const Header = styled.header`

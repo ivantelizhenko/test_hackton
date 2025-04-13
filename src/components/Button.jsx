@@ -1,13 +1,25 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { WEIGHTS } from "../constants";
 
 const Button = styled.button`
-  background-color: #e27c1e;
+  ${(props) =>
+    props.type === "fill" &&
+    css`
+      background-color: #e27c1e;
+      font-weight: ${WEIGHTS.semiBold};
+      border: none;
+    `}
+  ${(props) =>
+    props.type === "outline" &&
+    css`
+      background-color: transparent;
+      border: 1px solid #fff;
+      font-weight: ${WEIGHTS.normal};
+    `}
+
   color: #fff;
-  font-weight: ${WEIGHTS.semiBold};
-  width: 100%;
+  width: var(--width);
   text-align: center;
-  border: none;
   border-radius: 24px;
   padding: 12px;
 `;
