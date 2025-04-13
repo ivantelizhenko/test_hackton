@@ -10,7 +10,7 @@ function Hero() {
     <Wrapper>
       <Image alt="" src="/public/hero/first.png" />
       <Description>
-        <Heading as="h2" desktopSize={64}>
+        <Heading as="h2" $desktopSize={64}>
           Виграй хвостику смаколик
         </Heading>
         <Spacer size={16} />

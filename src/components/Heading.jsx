@@ -6,7 +6,7 @@ function Heading({ children, ...delegated }) {
 }
 
 const StyledHeader = styled.h1`
-  --size: ${(props) => props.desktopSize + "px"};
+  --size: ${(props) => props.$desktopSize + "px"};
 
   font-size: 2rem;
   font-weight: ${WEIGHTS.semiBold};

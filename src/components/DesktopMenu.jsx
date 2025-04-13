@@ -1,27 +1,27 @@
 import styled from "styled-components";
 import { QUERIES } from "../constants";
 
-function DesktopMenu() {
+function DesktopMenu({ setPage }) {
   return (
     <Wrapper>
       <List>
-        <li>
-          <a href="#">Пошук тварин</a>
+        <li onClick={() => setPage("cardsList")}>
+          <p>Пошук тварин</p>
         </li>
         <li>
-          <a href="#">Як допомогти</a>
+          <p href="#">Як допомогти</p>
         </li>
         <li>
-          <a href="#">Новини</a>
+          <p href="#">Новини</p>
         </li>
         <li>
-          <a href="#">Блог</a>
+          <p href="#">Блог</p>
         </li>
         <li>
-          <a href="#">Pet stories</a>
+          <p href="#">Pet stories</p>
         </li>
         <li>
-          <a href="#">Мій акаунт</a>
+          <p href="#">Мій акаунт</p>
         </li>
       </List>
     </Wrapper>
@@ -41,9 +41,13 @@ const List = styled.ul`
   display: flex;
   gap: 8px;
 
-  & li a {
+  & li p {
     padding: 8px;
     color: white;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 `;
 

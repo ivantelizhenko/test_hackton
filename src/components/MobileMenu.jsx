@@ -5,7 +5,7 @@ import Icon from "./Icon";
 import Spacer from "./Spacer";
 import { QUERIES } from "../constants";
 
-function MobileMenu({ onCloseMobileMenu }) {
+function MobileMenu({ onCloseMobileMenu, setPage }) {
   return (
     <dialog open>
       <Wrapper>
@@ -17,23 +17,28 @@ function MobileMenu({ onCloseMobileMenu }) {
         </Header>
         <Spacer size={64} />
         <List>
-          <li>
-            <a href="#">Пошук тварин</a>
+          <li
+            onClick={() => {
+              setPage("cardsList");
+              onCloseMobileMenu();
+            }}
+          >
+            <p>Пошук тварин</p>
           </li>
           <li>
-            <a href="#">Як допомогти</a>
+            <p>Як допомогти</p>
           </li>
           <li>
-            <a href="#">Новини</a>
+            <p>Новини</p>
           </li>
           <li>
-            <a href="#">Блог</a>
+            <p>Блог</p>
           </li>
           <li>
-            <a href="#">Pet stories</a>
+            <p>Pet stories</p>
           </li>
           <li>
-            <a href="#">Мій акаунт</a>
+            <p>Мій акаунт</p>
           </li>
         </List>
       </Wrapper>
@@ -71,9 +76,10 @@ const List = styled.ul`
   flex-direction: column;
   gap: 16px;
 
-  & li a {
+  & li p {
     padding: 8px;
     color: inherit;
+    cursor: pointer;
   }
 `;
 

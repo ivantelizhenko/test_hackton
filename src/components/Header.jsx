@@ -10,7 +10,7 @@ import DesktopMenu from "./DesktopMenu";
 import { QUERIES } from "../constants";
 import Button from "./Button";
 
-function Header() {
+function Header({ setPage }) {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   const handleShowMobileMenu = () => setShowMobileMenu(true);
@@ -20,7 +20,7 @@ function Header() {
       <HeaderSpacer size={48} />
       <Wrapper>
         <Logo />
-        <DesktopMenu />
+        <DesktopMenu setPage={setPage} />
         <MobileMenuButton onClick={handleShowMobileMenu}>
           <Icon
             id="menu"
@@ -30,7 +30,10 @@ function Header() {
           />
         </MobileMenuButton>
         {showMobileMenu && (
-          <MobileMenu onCloseMobileMenu={handleCloseMobileMenu} />
+          <MobileMenu
+            onCloseMobileMenu={handleCloseMobileMenu}
+            setPage={setPage}
+          />
         )}
 
         <ButtonWrapper>
