@@ -6,12 +6,12 @@ import Footer from "./components/Footer";
 import { useState } from "react";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState("cardsList");
+  const [currentPage, setCurrentPage] = useState("card-details");
 
   return (
     <Wrapper>
       <Header setPage={setCurrentPage} />
-      <Main page={currentPage} />
+      <Main page={currentPage} setPage={setCurrentPage} />
       <Footer />
     </Wrapper>
   );

@@ -5,6 +5,7 @@ import Card from "./Card";
 
 const testData = [
   {
+    id: 12312312324,
     img: "/public/animals/cat.png",
     name: "Сіма",
     age: "2 роки",
@@ -12,6 +13,7 @@ const testData = [
     gender: "she",
   },
   {
+    id: 67878766,
     img: "/public/animals/dog.png",
     name: "Пан Пес",
     age: "3 місяці",
@@ -20,7 +22,11 @@ const testData = [
   },
 ];
 
-function CardsList() {
+function CardsList({ setPage }) {
+  function handleShowDetails() {
+    setPage("card-details");
+  }
+
   return (
     <Wrapper>
       <Header>
@@ -59,7 +65,7 @@ function CardsList() {
       </FiltersPreview>
       <Cards>
         {testData.map((data) => (
-          <Card key={data.id} data={data} />
+          <Card key={data.id} data={data} onClick={handleShowDetails} />
         ))}
       </Cards>
     </Wrapper>
@@ -128,5 +134,8 @@ const FilterPreview = styled.li`
   white-space: nowrap;
 `;
 
-const Cards = styled.div``;
+const Cards = styled.div`
+  display: grid;
+  row-gap: 24px;
+`;
 export default CardsList;

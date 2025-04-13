@@ -10,6 +10,8 @@ import {
   Bookmark,
   Calendar,
   MapPin,
+  Home,
+  Phone,
 } from "react-feather";
 import { Venus, Mars } from "lucide-react";
 
@@ -25,6 +27,8 @@ const icons = {
   venus: Venus,
   calendar: Calendar,
   "map-pin": MapPin,
+  home: Home,
+  phone: Phone,
 };
 
 const Icon = ({ id, size, strokeWidth = 1, style, ...delegated }) => {

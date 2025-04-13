@@ -2,9 +2,8 @@ import styled from "styled-components";
 import Button from "./Button";
 import Icon from "./Icon";
 import UnstyledButton from "./UnstyledButton";
-import { WEIGHTS } from "../constants";
 
-function Card({ data }) {
+function Card({ data, onClick }) {
   const { img, name, age, place, gender } = data;
 
   return (
@@ -22,9 +21,9 @@ function Card({ data }) {
             size={24}
             strokeWidth={2}
           />
-          <p>
+          <h3>
             <strong>{name}</strong>
-          </p>
+          </h3>
         </Line>
         <Line>
           <Icon id="calendar" size={24} strokeWidth={2} />
@@ -35,7 +34,7 @@ function Card({ data }) {
           <p>{place}</p>
         </Line>
       </Details>
-      <Button type="fill" style={{ width: "100%" }}>
+      <Button type="fill" style={{ width: "100%" }} onClick={onClick}>
         Детальніше
       </Button>
     </Wrapper>

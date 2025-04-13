@@ -2,12 +2,14 @@ import styled from "styled-components";
 import Overview from "./Overview";
 import { QUERIES } from "../constants";
 import CardsList from "./CardsList";
+import CardDetails from "./CardDetails";
 
-function Main({ page }) {
+function Main({ page, setPage }) {
   return (
     <Wrapper>
       {page === "overview" && <Overview />}
-      {page === "cardsList" && <CardsList />}
+      {page === "cardsList" && <CardsList setPage={setPage} />}
+      {page === "card-details" && <CardDetails />}
     </Wrapper>
   );
 }

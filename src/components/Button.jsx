@@ -8,17 +8,19 @@ const Button = styled.button`
       background-color: #e27c1e;
       font-weight: ${WEIGHTS.semiBold};
       border: none;
+      color: #fff;
     `}
   ${(props) =>
     props.type === "outline" &&
     css`
       background-color: transparent;
-      border: 1px solid #fff;
+      border: 1px solid #1e1e1e;
       font-weight: ${WEIGHTS.normal};
+      color: #1e1e1e;
     `}
 
-  color: #fff;
-  width: var(--width);
+
+  width: var(--width, 100%);
   text-align: center;
   border-radius: 24px;
   padding: 12px;
