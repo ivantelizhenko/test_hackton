@@ -10,6 +10,9 @@ function Footer() {
           <a href="#">Пошук тварин</a>
         </li>
         <li>
+          <a href="#">Притулки</a>
+        </li>
+        <li>
           <a href="#">Як допомогти</a>
         </li>
         <li>

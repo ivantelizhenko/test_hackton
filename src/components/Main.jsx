@@ -3,6 +3,7 @@ import Overview from "./Overview";
 import { QUERIES } from "../constants";
 import CardsList from "./CardsList";
 import CardDetails from "./CardDetails";
+import UserAccount from "./UserAccount";
 
 function Main({ page, setPage }) {
   return (
@@ -10,6 +11,7 @@ function Main({ page, setPage }) {
       {page === "overview" && <Overview />}
       {page === "cardsList" && <CardsList setPage={setPage} />}
       {page === "card-details" && <CardDetails />}
+      {page === "user-account" && <UserAccount />}
     </Wrapper>
   );
 }

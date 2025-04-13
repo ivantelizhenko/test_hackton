@@ -14,6 +14,11 @@ import {
   Phone,
   Check,
   ChevronDown,
+  Heart,
+  MessageCircle,
+  Mail,
+  Plus,
+  MoreVertical,
 } from "react-feather";
 import { Venus, Mars } from "lucide-react";
 
@@ -33,6 +38,11 @@ const icons = {
   phone: Phone,
   check: Check,
   "chevron-down": ChevronDown,
+  heart: Heart,
+  comment: MessageCircle,
+  mail: Mail,
+  plus: Plus,
+  more: MoreVertical,
 };
 
 const Icon = ({ id, size, strokeWidth = 1, style, ...delegated }) => {

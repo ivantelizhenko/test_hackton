@@ -4,6 +4,7 @@ import UnstyledButton from "./UnstyledButton";
 import Icon from "./Icon";
 import Spacer from "./Spacer";
 import { QUERIES } from "../constants";
+import Button from "./Button";
 
 function MobileMenu({ onCloseMobileMenu, setPage }) {
   return (
@@ -26,6 +27,9 @@ function MobileMenu({ onCloseMobileMenu, setPage }) {
             <p>Пошук тварин</p>
           </li>
           <li>
+            <p>Притулки</p>
+          </li>
+          <li>
             <p>Як допомогти</p>
           </li>
           <li>
@@ -41,6 +45,8 @@ function MobileMenu({ onCloseMobileMenu, setPage }) {
             <p>Мій акаунт</p>
           </li>
         </List>
+        <Spacer size={64} />
+        <Button type="fill">Задонатити</Button>
       </Wrapper>
     </dialog>
   );
