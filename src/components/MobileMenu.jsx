@@ -29,7 +29,12 @@ function MobileMenu({ onCloseMobileMenu, setPage }) {
           <li>
             <p>Притулки</p>
           </li>
-          <li>
+          <li
+            onClick={() => {
+              setPage("donate");
+              onCloseMobileMenu();
+            }}
+          >
             <p>Як допомогти</p>
           </li>
           <li>
@@ -41,7 +46,12 @@ function MobileMenu({ onCloseMobileMenu, setPage }) {
           <li>
             <p>Pet stories</p>
           </li>
-          <li>
+          <li
+            onClick={() => {
+              setPage("user-account");
+              onCloseMobileMenu();
+            }}
+          >
             <p>Мій акаунт</p>
           </li>
         </List>

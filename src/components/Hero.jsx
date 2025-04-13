@@ -8,7 +8,7 @@ import { QUERIES } from "../constants";
 function Hero() {
   return (
     <Wrapper>
-      <Image alt="" src="../../public/hero/first.png" />
+      <Image alt="" src="/hero/first.png" />
       <Description>
         <Heading as="h2" $size={64}>
           Виграй хвостику смаколик

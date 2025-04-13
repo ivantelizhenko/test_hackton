@@ -22,7 +22,7 @@ function DonateSection({ setPage }) {
           Задонатити
         </DonateButtonDesktop>
       </Description>
-      <Image alt="" src="../../public/hero/third.png" />
+      <Image alt="" src="/hero/third.png" />
       <DonateButtonMobile
         type="fill"
         style={{ "--width": "100%" }}
