@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-function Spacer({ size }) {
-  return <Space style={{ "--height": size + "px" }}></Space>;
+function Spacer({ size, style }) {
+  return <Space style={{ "--height": size + "px", ...style }}></Space>;
 }
 
 const Space = styled.div`

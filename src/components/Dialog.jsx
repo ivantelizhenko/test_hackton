@@ -56,7 +56,7 @@ const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 16px;
+  padding: 8px 0;
 `;
 
 const List = styled.ul`

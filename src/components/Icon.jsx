@@ -8,7 +8,7 @@ const icons = {
   link: ArrowUpRight,
 };
 
-const Icon = ({ id, size, strokeWidth = 1, ...delegated }) => {
+const Icon = ({ id, size, strokeWidth = 1, style, ...delegated }) => {
   const Component = icons[id];
 
   if (!Component) {
@@ -20,6 +20,7 @@ const Icon = ({ id, size, strokeWidth = 1, ...delegated }) => {
       style={{
         "--size": size + "px",
         "--stroke-width": strokeWidth + "px",
+        ...style,
       }}
       {...delegated}
     >

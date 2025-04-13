@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { COLORS } from "../constants";
 
 const GlobalStyles = createGlobalStyle`
 /* GLOBAL STYLES */
@@ -14,6 +15,9 @@ const GlobalStyles = createGlobalStyle`
 html {
   interpolate-size: allow-keywords;
   height: 100%;
+
+  --color-primary: ${COLORS.primary};
+  --color-secondary: ${COLORS.secondary};
 }
 
 body {

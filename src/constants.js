@@ -1,4 +1,7 @@
-export const COLORS = {};
+export const COLORS = {
+  primary: "#629A64",
+  secondary: "#E27C1E",
+};
 
 export const BREAKPOINTS = {
   tabletMin: 550,
