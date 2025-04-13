@@ -12,6 +12,8 @@ import {
   MapPin,
   Home,
   Phone,
+  Check,
+  ChevronDown,
 } from "react-feather";
 import { Venus, Mars } from "lucide-react";
 
@@ -29,6 +31,8 @@ const icons = {
   "map-pin": MapPin,
   home: Home,
   phone: Phone,
+  check: Check,
+  "chevron-down": ChevronDown,
 };
 
 const Icon = ({ id, size, strokeWidth = 1, style, ...delegated }) => {

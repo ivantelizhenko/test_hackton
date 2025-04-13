@@ -2,6 +2,8 @@ import styled from "styled-components";
 import UnstyledButton from "./UnstyledButton";
 import Icon from "./Icon";
 import Card from "./Card";
+import { useState } from "react";
+import Filters from "./Filters";
 
 const testData = [
   {
@@ -23,6 +25,13 @@ const testData = [
 ];
 
 function CardsList({ setPage }) {
+  const [showFilters, setShowFilters] = useState(false);
+
+  const handleOpenFilters = () => setShowFilters(true);
+  const handleCloseFilters = () => {
+    console.log("click list");
+    setShowFilters(false);
+  };
   function handleShowDetails() {
     setPage("card-details");
   }
@@ -30,7 +39,7 @@ function CardsList({ setPage }) {
   return (
     <Wrapper>
       <Header>
-        <FilterButton>
+        <FilterButton onClick={handleOpenFilters}>
           <Icon id="filters" size={20} strokeWidth={2} />
         </FilterButton>
         <SearchInput>
@@ -68,6 +77,7 @@ function CardsList({ setPage }) {
           <Card key={data.id} data={data} onClick={handleShowDetails} />
         ))}
       </Cards>
+      {showFilters && <Filters handleClose={handleCloseFilters} />}
     </Wrapper>
   );
 }

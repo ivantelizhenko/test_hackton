@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import { useState } from "react";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState("card-details");
+  const [currentPage, setCurrentPage] = useState("cardsList");
 
   return (
     <Wrapper>
