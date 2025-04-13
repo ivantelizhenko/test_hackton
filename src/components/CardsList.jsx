@@ -8,7 +8,7 @@ import Filters from "./Filters";
 const testData = [
   {
     id: 12312312324,
-    img: "/public/animals/cat.png",
+    img: "../../public/animals/cat.png",
     name: "Сіма",
     age: "2 роки",
     place: "Горлівка",
@@ -16,7 +16,7 @@ const testData = [
   },
   {
     id: 67878766,
-    img: "/public/animals/dog.png",
+    img: "../../public/animals/dog.png",
     name: "Пан Пес",
     age: "3 місяці",
     place: "Ірпінь",

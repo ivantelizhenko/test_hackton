@@ -9,7 +9,7 @@ const testData = [
   {
     id: "asdhghgh",
     date: "30 хвилин тому",
-    imgsrc: "/public/user/cat.png",
+    imgsrc: "../../public/user/cat.png",
     title: "ТЕРМІНОВО! ЗНАЙДЕНО КОТИКА — ПОТРІБЕН ПРИТУЛОК!",
     description:
       "На тимчасово окупованій території було знайдено кота — розгублений, голодний, але дуже лагідний і ручний. Ймовірно, загубився або залишився без господарів.",
@@ -17,7 +17,7 @@ const testData = [
   {
     id: "213883884",
     date: "2 дні тому",
-    imgsrc: "/public/user/dog.png",
+    imgsrc: "../../public/user/dog.png",
     title: "ЗНАЙДЕНО СОБАКУ — ПОТРІБЕН ДІМ!",
     description:
       "Було знайдено песика. Він виснажений, але добрий і довірливий. Будь ласка, відгукніться, якщо можете прихистити або поширити цю інформацію!",
@@ -33,7 +33,7 @@ function UserAccount({ setPage }) {
       <Heading as="h2">Акаунт</Heading>
 
       <Profile>
-        <Image alt="" src="/public/user/profile.png" />
+        <Image alt="" src="../../public/user/profile.png" />
         <h3>Ганна Шестакова</h3>
       </Profile>
 
@@ -66,7 +66,7 @@ function UserAccount({ setPage }) {
           <CardWrapper key={id}>
             <CardHeader>
               <div style={{ display: "flex", gap: "16px" }}>
-                <CardProfileImage src="/public/user/profile.png" alt="" />
+                <CardProfileImage src="../../public/user/profile.png" alt="" />
                 <div
                   style={{
                     display: "flex",

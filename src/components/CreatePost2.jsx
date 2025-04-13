@@ -31,7 +31,7 @@ function CreatePost2({ setPage }) {
 
       <InputIcon>
         <img
-          src="/public/social-media/viber.svg"
+          src="../../public/social-media/viber.svg"
           width={36}
           height={36}
           alt="viber"
@@ -40,7 +40,7 @@ function CreatePost2({ setPage }) {
       </InputIcon>
       <InputIcon>
         <img
-          src="/public/social-media/telegram.svg"
+          src="../../public/social-media/telegram.svg"
           width={36}
           height={36}
           alt="telegram"
@@ -49,7 +49,7 @@ function CreatePost2({ setPage }) {
       </InputIcon>
       <InputIcon>
         <img
-          src="/public/social-media/instagram.svg"
+          src="../../public/social-media/instagram.svg"
           width={36}
           height={36}
           alt="instagram"
@@ -58,7 +58,7 @@ function CreatePost2({ setPage }) {
       </InputIcon>
       <InputIcon>
         <img
-          src="/public/social-media/facebook.svg"
+          src="../../public/social-media/facebook.svg"
           width={36}
           height={36}
           alt="facebook"

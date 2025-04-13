@@ -11,7 +11,7 @@ function Cta({ setPage }) {
       <Heading as="h2" $size={72}>
         Врятуй. Прилаштуй. Знайди друга.
       </Heading>
-      <Image alt="" src="/public/hero/second.png" />
+      <Image alt="" src="../../public/hero/second.png" />
       <Spacer size={16} />
       <Cards>
         <ActionCard

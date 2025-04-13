@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import { useState } from "react";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState("user-account");
+  const [currentPage, setCurrentPage] = useState("overview");
 
   return (
     <Wrapper>

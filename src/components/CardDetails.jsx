@@ -9,7 +9,7 @@ function CardDetails() {
     <Wrapper>
       <Heading as="h2">Оголошення</Heading>
       <ImageWrapper>
-        <img src="/public/animals/cat.png" alt="Cats' photo" />
+        <img src="../../public/animals/cat.png" alt="Cats' photo" />
         <BookmarkButton>
           <Icon id="bookmark" size={24} strokeWidth={2} />
         </BookmarkButton>
