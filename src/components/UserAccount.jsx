@@ -24,7 +24,7 @@ const testData = [
   },
 ];
 
-function UserAccount() {
+function UserAccount({ setPage }) {
   return (
     <Wrapper>
       <ButtonEdit>
@@ -48,7 +48,7 @@ function UserAccount() {
         </Contact>
       </Contacts>
 
-      <UserButton type="fill">
+      <UserButton type="fill" onClick={() => setPage("createPost1")}>
         <Icon id="plus" size={24} strokeWidth={2} />
         Створити оголошення
       </UserButton>

@@ -22,7 +22,9 @@ function Cta({ setPage }) {
         />
         <Spacer size={16} />
         <ActionCard
-          handleSetPage={() => {}}
+          handleSetPage={() => {
+            setPage("createPost1");
+          }}
           title="Притулки, які допоможуть"
           description="Залиши запит — і ми допоможемо знайти притулок, де подбають."
           href="#"
