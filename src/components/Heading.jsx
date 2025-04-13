@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { QUERIES, WEIGHTS } from "../constants";
 
 function Heading({ children, ...delegated }) {
@@ -6,14 +6,14 @@ function Heading({ children, ...delegated }) {
 }
 
 const StyledHeader = styled.h1`
-  --size: ${(props) => props.$desktopSize + "px"};
+  ${(props) =>
+    props.$size &&
+    css`
+      --size: ${props.$size} / 16 + "rem";
+    `}
 
-  font-size: 2rem;
   font-weight: ${WEIGHTS.semiBold};
-
-  @media ${QUERIES.laptopAndUp} {
-    font-size: var(--size, 2rem);
-  }
+  font-size: var(--size, 2rem);
 `;
 
 export default Heading;

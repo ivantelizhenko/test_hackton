@@ -9,7 +9,7 @@ function Donate() {
   return (
     <Wrapper>
       <Description>
-        <Heading as="h2" $desktopSize={48}>
+        <Heading as="h2" $size={48}>
           Підтримайте тих, хто не може сказати “допоможи”
         </Heading>
 

@@ -8,7 +8,7 @@ import { QUERIES } from "../constants";
 function Cta() {
   return (
     <Wrapper>
-      <Heading as="h2" $desktopSize={72}>
+      <Heading as="h2" $size={72}>
         Врятуй. Прилаштуй. Знайди друга.
       </Heading>
       <Image alt="" src="/public/hero/second.png" />

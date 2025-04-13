@@ -2,7 +2,6 @@ import styled from "styled-components";
 import Hero from "./Hero";
 import Cta from "./Cta";
 import Donate from "./Donate";
-import { QUERIES } from "../constants";
 
 function Overview() {
   return (
